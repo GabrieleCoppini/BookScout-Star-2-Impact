@@ -49,11 +49,6 @@ const config = {
       favicon: "./src/img/favicon.ico",
     }),
   ],
-  devServer: {
-    port: 4000,
-    open: true,
-    static: path.resolve(__dirname, "dist"),
-  },
 };
 
 module.exports = () => {
