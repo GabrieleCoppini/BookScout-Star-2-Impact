@@ -25,16 +25,16 @@ const yourBookstoreBtn = document.querySelector(".close-bookstore-btn");
 
 init();
 
-//search
+// //search
 searchForm.addEventListener("submit", getGenre);
 logo.addEventListener("click", restoreHome);
 
-//description
+// //description
 resultContainer.addEventListener("click", openDescription);
 backWindow.addEventListener("click", closeDescription);
 closeDescriptionButton.addEventListener("click", closeDescription);
 
-//Personal bookstore
+// // Personal bookstore
 yourBookBtn.addEventListener("click", displayBokStore);
 backWindow.addEventListener("click", closeBookStore);
 favoriteBtn.addEventListener("click", addToYourBookstore);

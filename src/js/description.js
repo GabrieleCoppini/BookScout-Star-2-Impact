@@ -10,6 +10,9 @@ let bookTitle;
 let bookDescription;
 export let yourBookstoreBooks = [];
 
+descriptionWindow.classList.add("hidden");
+backWindow.classList.add("hidden");
+
 export const openDescription = async (event) => {
   const bookCard = event.target.closest(".book-display");
   if (bookCard) {

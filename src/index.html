@@ -1,9 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Bookstore" />
     <meta property="og:type" content="website" />
     <meta
@@ -18,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
       rel="stylesheet"
@@ -59,7 +58,7 @@
         <div class="book-search"></div>
       </div>
     </main>
-    <div class="description-window hidden">
+    <div class="description-window">
       <button class="close-description-btn">
         <i class="fa-solid fa-x"></i>
       </button>
@@ -68,16 +67,16 @@
         <button class="favorite-btn"></button>
       </div>
     </div>
-    <div class="back-window hidden"></div>
+    <div class="back-window"></div>
 
     <div class="your-book-store">
       <button class="close-bookstore-btn">
-        <i class="bi bi-x"></i>
+        <i class="fa-solid fa-x"></i>
       </button>
       <h3>Your Books</h3>
       <p class="no-books-message">No favorite books</p>
       <ul class="favorite-list"></ul>
-      <button class="clear-btn hidden">Clear</button>
+      <button class="clear-btn">Clear</button>
     </div>
     <footer></footer>
   </body>
