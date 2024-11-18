@@ -1,11 +1,14 @@
 .header{
-    width: 100%;
-    height: 60px;
-    padding: 50px 0px;
-    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    padding: 0 5px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 30;
 }
 
 
@@ -14,3 +17,26 @@
     height: 60px;
     cursor: pointer;
 }
+
+
+.your-book-btn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    margin: 15px;
+    color: #803407;
+
+    &:hover {
+      color: #e5ddd0;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #fbf6f1;
+    }
+  }
+

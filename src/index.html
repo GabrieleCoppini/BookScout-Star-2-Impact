@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
 
@@ -26,7 +26,11 @@
   </head>
   <body>
     <header>
-      <nav class="header"></nav>
+      <nav class="header">
+        <button class="your-book-btn">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+      </nav>
     </header>
     <main>
       <div class="search-container">
@@ -56,12 +60,25 @@
       </div>
     </main>
     <div class="description-window hidden">
-      <button class="close-description">
+      <button class="close-description-btn">
         <i class="fa-solid fa-x"></i>
       </button>
       <div class="description-div"></div>
-      <div class="bottom-div"></div>
+      <div class="description-buttons">
+        <button class="favorite-btn"></button>
+      </div>
     </div>
     <div class="back-window hidden"></div>
+
+    <div class="your-book-store">
+      <button class="close-bookstore-btn">
+        <i class="bi bi-x"></i>
+      </button>
+      <h3>Your Books</h3>
+      <p class="no-books-message">No favorite books</p>
+      <ul class="favorite-list"></ul>
+      <button class="clear-btn hidden">Clear</button>
+    </div>
+    <footer></footer>
   </body>
 </html>

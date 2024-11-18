@@ -2,10 +2,13 @@ import axios from "axios";
 
 const descriptionWindow = document.querySelector(".description-window");
 const descriptionDiv = document.querySelector(".description-div");
+const favoriteUl = document.querySelector(".favorite-list");
 export const backWindow = document.querySelector(".back-window");
+export const favoriteBtn = document.querySelector(".favorite-btn");
 
 let bookTitle;
 let bookDescription;
+export let yourBookstoreBooks = [];
 
 export const openDescription = async (event) => {
   const bookCard = event.target.closest(".book-display");
@@ -31,6 +34,7 @@ export const openDescription = async (event) => {
       }
 
       displayDescription(bookTitle, bookDescription);
+      updateBtn();
     } catch (error) {
       console.log(error);
     }
@@ -52,4 +56,44 @@ export const closeDescription = function () {
   document.body.style.overflow = "auto";
   descriptionDiv.scrollTop = 0;
   descriptionDiv.innerHTML = "";
+};
+
+export const addToYourBookstore = function () {
+  if (!yourBookstoreBooks.includes(bookTitle)) {
+    yourBookstoreBooks.push(bookTitle);
+  } else {
+    yourBookstoreBooks.splice(yourBookstoreBooks.indexOf(bookTitle), 1);
+  }
+  updateBtn();
+  updateBookStore();
+};
+
+export const updateBtn = function () {
+  yourBookstoreBooks.includes(bookTitle)
+    ? (favoriteBtn.innerHTML = `<i class="fa-solid fa-heart"></i>`)
+    : (favoriteBtn.innerHTML = `<i class="fa-regular fa-heart"></i>`);
+};
+
+export const updateBookStore = function () {
+  favoriteUl.innerHTML = "";
+  if (yourBookstoreBooks.length > 0) {
+    yourBookstoreBooks.forEach((book) => {
+      const ListElement = document.createElement("li");
+      ListElement.textContent = book;
+      favoriteUl.appendChild(ListElement);
+    });
+  }
+  setLocalStorage(yourBookstoreBooks);
+};
+
+const setLocalStorage = function (books) {
+  localStorage.setItem("books", JSON.stringify(books));
+};
+
+export const getLocalStorage = function () {
+  const data = JSON.parse(localStorage.getItem("books"));
+  if (data) {
+    yourBookstoreBooks = data;
+    updateBookStore();
+  }
 };

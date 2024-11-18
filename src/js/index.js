@@ -6,11 +6,23 @@ import { getGenre } from "./search.js";
 import {
   openDescription,
   closeDescription,
+  addToYourBookstore,
+  favoriteBtn,
   backWindow,
 } from "./description.js";
 
+import {
+  closeBookStore,
+  displayBokStore,
+  clearBookStore,
+  clearBtn,
+} from "./your-book.js";
+
 const searchForm = document.querySelector(".search");
-const closeDescriptionButton = document.querySelector(".close-description");
+const yourBookBtn = document.querySelector(".your-book-btn");
+const closeDescriptionButton = document.querySelector(".close-description-btn");
+const yourBookstoreBtn = document.querySelector(".close-bookstore-btn");
+
 init();
 
 //search
@@ -21,3 +33,10 @@ logo.addEventListener("click", restoreHome);
 resultContainer.addEventListener("click", openDescription);
 backWindow.addEventListener("click", closeDescription);
 closeDescriptionButton.addEventListener("click", closeDescription);
+
+//Personal bookstore
+yourBookBtn.addEventListener("click", displayBokStore);
+backWindow.addEventListener("click", closeBookStore);
+favoriteBtn.addEventListener("click", addToYourBookstore);
+yourBookstoreBtn.addEventListener("click", closeBookStore);
+clearBtn.addEventListener("click", clearBookStore);

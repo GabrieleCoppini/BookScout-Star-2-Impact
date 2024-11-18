@@ -84,7 +84,14 @@
     }
 }
 
-
+.on-search {
+  margin-top: 70px;
+  padding-top: 0;
+  height: 100px;
+  .intro-div {
+    padding-bottom: 0;
+  }
+}
 
 
 
