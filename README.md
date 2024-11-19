@@ -18,7 +18,7 @@ To use BookScout, follow these steps:
              2. Click on a book to view its details.
 
 ![im](https://github.com/GabrieleCoppini/BookScout-Star-2-Impact/blob/e333674e5aacfb873befc2c1281c05550ca914ec/book1.png)
-             
+![im2     ](https://github.com/GabrieleCoppini/BookScout-Star-2-Impact/blob/8da3b5a1cae4ff296a744d05148d2fa7e246ed81/descrizione%20.png)          
         
 
 
