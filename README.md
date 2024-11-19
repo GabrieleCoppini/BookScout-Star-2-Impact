@@ -17,7 +17,7 @@ To use BookScout, follow these steps:
              1. Use the search bar to search for books by genre.
              2. Click on a book to view its details.
 
-             ![Home](https://github.com/GabrieleCoppini/BookScout-Star-2-Impact/blob/b8698b71899de62eb8e14e891fbd8e0e99ed0d2c/book1.png)
+             ![home](https://github.com/GabrieleCoppini/BookScout-Star-2-Impact/blob/95b2d1cee50c0a6d601f8dba2ee33e1b4195c1d0/book1.png)
              
         
 
