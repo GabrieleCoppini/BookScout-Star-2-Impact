@@ -19,7 +19,7 @@ To use BookScout, follow these steps:
 
              ![Home](https://github.com/GabrieleCoppini/BookScout-Star-2-Impact/blob/b8698b71899de62eb8e14e891fbd8e0e99ed0d2c/book1.png)
              
-             ![descrizione](https://github.com/GabrieleCoppini/BookScout-Star-2-Impact/blob/b8698b71899de62eb8e14e891fbd8e0e99ed0d2c/descrizione%20.png)
+        
 
 
 
